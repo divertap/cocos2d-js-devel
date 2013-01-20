@@ -393,6 +393,7 @@ static CCTextureCache *sharedTextureCache;
 		NSArray *keys = [textures_ allKeys];
 		for( id key in keys ) {
 			id value = [textures_ objectForKey:key];
+            CCLOG(@"cocos2d: CCTextureCache(%@,%d): retain count: %d for %@",[value class],((CCTexture2D*)value).name, [value retainCount],key);
 			if( [value retainCount] == 1 ) {
 				CCLOG(@"cocos2d: CCTextureCache: removing unused texture: %@", key);
 				[textures_ removeObjectForKey:key];

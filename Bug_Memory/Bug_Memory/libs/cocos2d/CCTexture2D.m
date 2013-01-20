@@ -983,5 +983,12 @@ static BOOL PVRHaveAlphaPremultiplied_ = NO;
 	
 	return  nil;
 }
+
+//- (id) retain {
+//    if( name_ == 3 ) {
+//        CCLOG(@"Retain home background!");
+//    }
+//    return [super retain];
+//}
 @end
 
