@@ -7,6 +7,7 @@ var ThirdScene = function(){};
 ThirdScene.prototype.onCleanTextureCachePressed = function()
 {	
     cc.log('Remove');
+    cc.SpriteFrameCache.getInstance().removeUnusedSpriteFrames();
     cc.TextureCache.getInstance().removeUnusedTextures();
 };
 
