@@ -580,7 +580,7 @@
         
         if (setProp)
         {
-            if (jsControlled)
+            if (!jsControlled)
             {
                 // Objective C callbacks
                 if (selectorTarget)
@@ -646,7 +646,7 @@
         
         if (setProp)
         {
-            if (jsControlled)
+            if (!jsControlled)
             {
                 // Objective-C callbacks
                 // Since we do not know for sure that CCControl is available, use
@@ -946,7 +946,7 @@
     }
     
     // Assign to variable (if applicable)
-    if (jsControlled)
+    if (!jsControlled)
     {
         if (memberVarAssignmentType)
         {

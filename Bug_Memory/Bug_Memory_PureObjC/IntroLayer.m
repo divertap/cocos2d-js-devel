@@ -63,7 +63,11 @@
 -(void) onEnter
 {
 	[super onEnter];
+#ifdef use_ccb
     CCScene *scene = [CCBReader sceneWithNodeGraphFromFile:@"MainScene.ccbi"];
+#else
+    CCScene *scene = [MainScene scene];
+#endif
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:scene ]];
 }
 @end

@@ -15,5 +15,5 @@
 @interface ThirdScene : CCLayer {
     
 }
-
++(CCScene *) scene;
 @end

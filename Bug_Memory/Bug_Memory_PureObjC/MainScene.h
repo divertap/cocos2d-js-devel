@@ -12,8 +12,10 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
+#define use_ccb 1
+
 @interface MainScene : CCLayer {
     
 }
-
++(CCScene *) scene;
 @end
